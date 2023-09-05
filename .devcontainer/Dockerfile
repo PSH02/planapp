@@ -10,7 +10,6 @@ RUN git clone https://github.com/flutter/flutter.git /usr/local/flutter
 ENV PATH "$PATH:/usr/local/flutter/bin"
 RUN flutter channel stable
 RUN flutter upgrade
-RUN flutter doctor
 
 # Android SDK 설치
 RUN wget https://dl.google.com/android/repository/commandlinetools-linux-7302050_latest.zip
